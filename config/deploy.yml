@@ -43,7 +43,7 @@ ssh:
 accessories:
   db:
     image: postgres:16-alpine
-    host: 138.2.144.127
+    host: 130.162.62.43
     port: 5432
     env:
       clear:
