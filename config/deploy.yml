@@ -6,7 +6,7 @@ image: k4sku/pwa_mock
 
 # Deploy to these servers.
 servers:
-  - 138.2.144.127
+  - 130.162.62.43
 
 # Credentials for your image host.
 registry:
@@ -18,7 +18,7 @@ registry:
 # Remember to run `kamal env push` after making changes!
 env:
   clear:
-    DB_HOST: 138.2.144.127
+    DB_HOST: 130.162.62.43
     POSTGRES_USER: webapp
     POSTGRES_DB: pwa_mock_production
   secret:
@@ -27,7 +27,7 @@ env:
 
 # Use a different ssh user than root
 ssh:
-  user: ubuntu
+  user: opc
 
 # Configure builder setup.
 # builder:
