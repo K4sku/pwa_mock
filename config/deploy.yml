@@ -29,15 +29,12 @@ env:
 ssh:
   user: opc
 
-# Configure builder setup.
-# builder:
-#   args:
-#     RUBY_VERSION: 3.2.0
-#   secrets:
-#     - GITHUB_TOKEN
-#   remote:
-#     arch: amd64
-#     host: ssh://app@192.168.0.1
+builder:
+  args:
+    RUBY_VERSION: 3.2.2
+  local:
+   arch: amd64
+   host: unix:///Users/<%= `whoami`.strip %>/.docker/run/docker.sock
 
 # Use accessory services (secrets come from .env).
 accessories:
