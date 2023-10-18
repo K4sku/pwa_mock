@@ -2,7 +2,7 @@
 service: pwa_mock
 
 # Name of the container image.
-image: k4sku/pwa_mock
+image: kasku/pwa_mock
 
 # Deploy to these servers.
 servers:
