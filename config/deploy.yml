@@ -7,6 +7,8 @@ image: kasku/pwa_mock
 # Deploy to these servers.
 servers:
   - 130.162.62.43
+options:
+  log_lines: 200
 
 # Credentials for your image host.
 registry:
